@@ -1,6 +1,7 @@
 import React from "react";
 import logoImg from "../assets/logo.png";
 import menuIcon from "../assets/menu.png";
+import cartIcon from "../assets/shopping-cart.png";
 import './Header.css'
 
 
@@ -23,9 +24,9 @@ export default function Header() {
       <div id="otherLink" className="navLinks">
         <p>Contact Us</p>
       </div>
-      <div className="navLinks">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <p>My Cart</p>
+      <div id="cartBtn" className="navLinks">
+        <img src={cartIcon} alt="cart" />
+        <p>Cart</p>
       </div>
       <div className="menuIcon">
         <img src={menuIcon} alt="menuIcon" />
