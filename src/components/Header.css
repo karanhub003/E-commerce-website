@@ -1,0 +1,85 @@
+.navBar{
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:4px 12px;
+    
+
+}
+.logoBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+.logoImg{
+width: 50px;
+}
+.searchContainer{
+    display: flex;
+    align-items: center;
+    border-radius:12px ;
+    border: 1px solid;
+    padding-left: 10px;
+    width: 450px;
+    
+    margin-left: 20px;
+}
+.searchContainer input{
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+}
+.linkContainer{
+    display: flex;
+    gap: 20px;
+    
+}
+.navLinks{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:6px  8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.menuIcon{
+    display: none;
+}
+.menuIcon img{
+    width: 50px;
+}
+
+
+
+/* for the tablet mode */
+@media (max-width:880px) {
+    .navBar{
+        padding: 4px;
+    }
+    .searchContainer{
+        margin-left: 0px;
+        width: 350px;
+    }
+    .linkContainer{
+        gap: 10px;
+    }
+    .navLinks{
+        padding: 6px 4px;
+    }
+   
+}
+
+@media (max-width:690px) {
+    #otherLink{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+}
+
