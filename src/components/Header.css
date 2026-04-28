@@ -1,125 +1,172 @@
-.navBar{
-    /* border: 2px solid; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding:4px 12px;
-    
+.navBar {
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4px 12px;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+.logoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+}
+.logoImg {
+  width: 50px;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding-left: 10px;
+  width: 450px;
+  box-shadow: 0px 0px 3px 0px rgb(255 255 255 / 75%);
+  margin-left: 20px;
+}
+.searchContainer input {
+  padding: 10px;
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--text-main);
+}
+.searchContainer input::placeholder {
+  color: var(--text-secondary);
+}
+.linkContainer {
+  display: flex;
+  gap: 20px;
+}
+.navLinks {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-secondary);
+}
+.navLinks:hover {
+  background-color: var(--primary);
+  color: var(--text-main);
+}
+.navLinks:active {
+  color: var(--text-main);
+  border-bottom: 2px solid var(--primary);
+}
+.menuIcon {
+  display: none;
+}
+.menuIcon img {
+  width: 50px;
+}
+#cartBtn {
+  align-items: flex-end;
+}
+#cartBtn img {
+  width: 40px;
+}
 
-}
-.logoBox{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* for the tablet mode */
+@media (max-width: 880px) {
+  .navBar {
     padding: 4px;
+  }
+  .searchContainer {
+    margin-left: 0px;
+    width: 350px;
+  }
+  .linkContainer {
+    gap: 10px;
+  }
+  .navLinks {
+    padding: 6px 4px;
+  }
+  #cartBtn img {
+    width: 30px;
+  }
 }
-.logoImg{
-width: 50px;
-}
-.searchContainer{
-    display: flex;
+/* for the mid to  semi-small devices  */
+@media (max-width: 700px) {
+  #otherLink {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .linkContainer {
     align-items: center;
-    border-radius:12px ;
-    border: 1px solid;
-    padding-left: 10px;
-    width: 450px;
-    
-    margin-left: 20px;
-}
-.searchContainer input{
-    padding: 10px;
+    gap: 15px;
+  }
+  .searchContainer input {
+    padding: 8px;
     width: 90%;
     outline: none;
     border: none;
-}
-.linkContainer{
-    display: flex;
-    gap: 20px;
-    
-}
-.navLinks{
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: center;
+  }
+  #cartBtn {
+    flex-direction: column;
     align-items: center;
-    padding:6px  8px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.menuIcon{
-    display: none;
-}
-.menuIcon img{
-    width: 50px;
-}
-#cartBtn{
-    align-items: flex-end;
-}
-#cartBtn img{
-    width: 40px;
-}
-
-
-
-/* for the tablet mode */
-@media (max-width:880px) {
-    .navBar{
-        padding: 4px;
-    }
-    .searchContainer{
-        margin-left: 0px;
-        width: 350px;
-    }
-    .linkContainer{
-        gap: 10px;
-    }
-    .navLinks{
-        padding: 6px 4px;
-    }
-    #cartBtn img{
+    justify-content: center;
+  }
+  #cartBtn img {
     width: 30px;
-}
-   
+  }
+  p {
+    font-size: 12px;
+  }
+  .menuIcon img {
+    width: 30px;
+  }
+  .logoImg {
+    width: 30px;
+  }
 }
 
-@media (max-width:700px) {
-    #otherLink{
-        display: none;
-    }
-    .menuIcon{
-        display: block;
-    }
-    .linkContainer{
-        align-items: center;
-        gap: 5px;
-    }
-    .searchContainer{
-        width: 200px;
-    }
-    .searchContainer input{
+
+
+/* for the small devices  */
+@media (max-width: 500px) {
+  #otherLink {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+  .linkContainer {
+    align-items: center;
+    gap: 10px;
+  }
+  .searchContainer {
+    width: 200px;
+  }
+  .searchContainer input {
     padding: 6px;
     width: 80%;
     outline: none;
     border: none;
+  }
+  #cartBtn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #cartBtn img {
+    width: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .menuIcon img {
+    width: 26px;
+  }
+  .logoImg {
+    width: 30px;
+  }
 }
-    #cartBtn{
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-
-    }
-    #cartBtn img{
-        width: 20px;
-    }
-    p{
-        font-size: 12px;
-    }
-    .menuIcon img{
-    width: 35px;
-}
-.logoImg{
-width: 30px;
-}
-}
-
