@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './Header'
-import ProductCard from './ProductCard'
+import ProductList from './ProductList'
+
+
 
 export default function Home() {
   return (
@@ -9,9 +11,7 @@ export default function Home() {
         <Header/>
     </header>
     <main>
-      <div className='ProductsContainer'>
-        <ProductCard/>
-      </div>
+      <ProductList/>
     </main>
     </>
   )

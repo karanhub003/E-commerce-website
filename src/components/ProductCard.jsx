@@ -1,18 +1,18 @@
 import React from 'react'
 import './ProductCard.css'
-export default function ProductCard() {
+export default function ProductCard({product}) {
   return (
     <>
     <div className='ProductCard'>
         <div className='priceTag'>
-                <p>$199</p>
+                <p>${product.price}</p>
             </div>
         <div className='imgCard'>
-            <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" alt="zxy item" />   
+            <img src={product.thumbnail} alt="zxy item" />   
         </div>
         <div className='productInfo'>
-        <h3>Essence Mascara Lash Princess</h3>
-        <p>The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects.</p>
+        <h3>{product.title}</h3>
+        <p>{product.description}</p>
         <div className='addToCartBtn'>
             <button>Add To Cart</button>
         </div>

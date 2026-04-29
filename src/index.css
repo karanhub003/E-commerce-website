@@ -26,3 +26,6 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+.errors{
+    color: white;
+}
