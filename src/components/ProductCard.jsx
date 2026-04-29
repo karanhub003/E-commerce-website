@@ -14,7 +14,7 @@ export default function ProductCard({product}) {
         <h3>{product.title}</h3>
         <p>{product.description}</p>
         <div className='addToCartBtn'>
-            <button>Add To Cart</button>
+            <button className='ToCartBtn'>Add To Cart</button>
         </div>
         </div>
     </div>

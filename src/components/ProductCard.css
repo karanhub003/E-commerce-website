@@ -44,7 +44,6 @@
 .imgCard img {
   width: 100%;
   height: 100%;
-  margin-bottom: 12px;
   object-fit: contain;
 }
 .productInfo {
@@ -64,7 +63,7 @@
   color: var(--text-secondary);
   font-size: 14px;
 }
-button {
+.ToCartBtn {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
@@ -75,7 +74,28 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-button:hover {
+.ToCartBtn:hover {
   background: #2563eb;
   transform: scale(1.02);
+}
+
+
+@media (max-width:500px) {
+  .imgCard{
+    height: 230px;
+  }
+  .priceTag{
+    padding: 8px 15px;
+    
+  }
+  .priceTag p{
+font-size: 14px;
+  }
+  .productInfo{
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .productInfo p{
+    font-size: 12px;
+  }
 }
