@@ -17,12 +17,14 @@ body{
 }
 
 main{
-    margin: 50px 30px;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 20px;
 }
 
 .ProductsContainer{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
