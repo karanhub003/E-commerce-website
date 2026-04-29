@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Inter';
 
 }
 :root {
@@ -13,4 +14,15 @@
 }
 body{
     background-color: var(--bg-main);
+}
+
+main{
+    margin: 50px 30px;
+}
+
+.ProductsContainer{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }

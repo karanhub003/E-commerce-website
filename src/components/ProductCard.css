@@ -1,0 +1,68 @@
+.ProductCard {
+  /* border:  2px solid wheat; */
+  max-width: 350px;
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.ProductCard:hover {
+  background: #334155;
+  transform: translateY(-4px);
+}
+.priceTag {
+  /* border: 1px solid; */
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  padding: 10px 20px;
+  background: #22c55e; /* green */
+  color: white;
+  border-radius: 0px 0px 8px 8px;
+}
+.priceTag p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.imgCard img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.productInfo {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--text-main);
+  font-size: 1.25rem;
+}
+.productInfo h3{
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.productInfo p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #2563eb;
+  transform: scale(1.02);
+}
