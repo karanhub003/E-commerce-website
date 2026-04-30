@@ -1,0 +1,15 @@
+.ToCartBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ToCartBtn:hover {
+  background: #2563eb;
+  transform: scale(1.02);
+}
