@@ -3,6 +3,8 @@ import './ProductCard.css'
 import { Link } from 'react-router-dom'
 import AddToCartBtn from './AddToCartBtn'
 export default function ProductCard({product}) {
+
+  // console.log(product.reviews);
   return (
     <>
     <Link to={`/product/${product.id}`} className='ProductCard'>

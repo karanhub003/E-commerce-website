@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 export default function useProduct() {
-    const [products,setProduct]=useState([])
+    const [products,setProducts]=useState([])
     const[loading,setLoading]=useState(true)
     const[error,setError]=useState(null)
 
@@ -10,7 +10,7 @@ export default function useProduct() {
             try{
                 const res=await fetch("https://dummyjson.com/products?limit=100")
                 const data=await res.json()
-                setProduct(data.products)
+                setProducts(data.products)
                 
                 setLoading(false)
             } catch(err){

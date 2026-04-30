@@ -1,0 +1,80 @@
+.productDetailContainer{
+    background-color: var(--bg-card);
+    /* border: 2px solid white; */
+    display: flex;
+    gap: 20px;
+    color: var(--text-main);
+    border-radius: 18px 18px 0px 0px;
+}
+.imgBox{
+    /* border:2px solid aqua; */
+    width:50%;
+    padding: 20px;
+}
+.imgBox img{
+    width: 90%;
+}
+.detailInfo{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.nameDes{
+    display: flex;
+    flex-direction: column;
+    gap:15px
+}
+.detailInfo p{
+    color: var(--text-secondary);
+}
+.detailInfo h2{
+    font-size: 2rem;
+}
+.priceBox{
+  width: 100px;
+  padding: 10px 25px;
+  background: #22c55e; /* green */
+  border-radius: 8px
+}
+.priceBox p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+
+.detailReviewContainer{
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+.reviewBox{
+    background-color: var(--bg-card);
+    border-radius: 18px;
+    color: var(--text-main);
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+    gap: 30px;
+}
+.reviewBox p{
+    text-align: center;
+}
+.reviewInfo{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+.commentRate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
