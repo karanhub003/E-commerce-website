@@ -8,6 +8,7 @@ import './Header.css'
 
 export default function Header() {
   return (
+    <header>
     <div className="navBar">
       <div className="logoBox">
         <img className="logoImg" src={logoImg} alt="Logo" />
@@ -33,5 +34,6 @@ export default function Header() {
       </div>
       </div>
     </div>
+    </header>
   );
 }

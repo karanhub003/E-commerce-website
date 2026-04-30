@@ -1,9 +1,10 @@
 import React from 'react'
 import './ProductCard.css'
+import { Link } from 'react-router-dom'
 export default function ProductCard({product}) {
   return (
     <>
-    <div className='ProductCard'>
+    <Link to={`/product/${product.id}`} className='ProductCard'>
         <div className='priceTag'>
                 <p>${product.price}</p>
             </div>
@@ -17,7 +18,8 @@ export default function ProductCard({product}) {
             <button className='ToCartBtn'>Add To Cart</button>
         </div>
         </div>
-    </div>
+    </Link>
+    
     </>
   )
 }
