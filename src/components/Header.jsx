@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <div className="searchContainer">
           <i className="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search Nexora.in"/>
+          <input type="text" placeholder="Search Nexora.in" />
       </div>
       <div className="linkContainer">
         <div id="otherLink"  className="navLinks">

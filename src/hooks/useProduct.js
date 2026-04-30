@@ -8,10 +8,10 @@ export default function useProduct() {
     useEffect(()=>{
         async function fetchProducts(){
             try{
-                const res=await fetch("https://dummyjson.com/products")
+                const res=await fetch("https://dummyjson.com/products?limit=100")
                 const data=await res.json()
-
                 setProduct(data.products)
+                
                 setLoading(false)
             } catch(err){
                 setError("Something Went Wrong")
@@ -19,9 +19,9 @@ export default function useProduct() {
             }
         }
         fetchProducts()
+        
     },[])
-
-
+    
   return {products,loading,error}
     
   
