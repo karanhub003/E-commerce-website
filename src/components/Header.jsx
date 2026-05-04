@@ -27,9 +27,9 @@ export default function Header({ query, setQuery, inputValue, setInputValue,setC
             <p onClick={() => setShowCategory(prev => !prev)}>Category</p>
           </div>
           { showCategory && <CategoryBox setCategory={setCategory} setQuery={setQuery} setInputValue={setInputValue}  setShowCategory={setShowCategory}/>}
-          <div id="otherLink" className="navLinks">
+          <Link to="/Contact-us" id="otherLink" className="navLinks">
             <p>Contact Us</p>
-          </div>
+          </Link>
           <div id="cartBtn" className="navLinks">
             <img src={cartIcon} alt="cart" />
             <p>Cart</p>

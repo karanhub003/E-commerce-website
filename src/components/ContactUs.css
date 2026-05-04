@@ -1,0 +1,24 @@
+.contactUs{
+    color: var(--text-main);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+ul{
+    margin-block: 15px;
+}
+b{
+    color: var(--text-main);
+}
+li b{
+    margin-right: 5px;
+}
+.contactBox{
+    color: var(--text-secondary);
+}
+.contactInfo{
+    margin-block: 15px;
+}
+.contactInfo b{
+    margin-right: 5px;
+}

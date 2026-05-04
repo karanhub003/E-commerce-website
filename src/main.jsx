@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './components/Home.jsx';
 import ErrorPage from './components/ErrorPage.jsx';
 import ProductDetails from './components/ProductDetails.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         {
             path:"product/:id",
             element:<ProductDetails/>
+        },
+        {
+            path:"/contact-Us",
+            element:<ContactUs/>
         },
         
     ]
