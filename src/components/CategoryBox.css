@@ -1,9 +1,25 @@
 .categoryBox{
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    border-radius: 12px;
+    background-color: var(--bg-card);
     position: absolute;
     top: 40px;
     left: 10px;
     z-index: 10;
-    
-
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+     gap: 20px;
+     align-items: center;
+     padding: 20px;
+     color: var(--text-main);
+     cursor: pointer;
+     transition: all 0.2s ease;
+     
+}
+.categoryBox p{
+    font-weight: 600;
+}
+p:hover{
+    transform: scale(1.2);
 }

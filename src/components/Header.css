@@ -40,6 +40,7 @@
 .linkContainer {
   display: flex;
   gap: 20px;
+  position: relative;
 }
 .navLinks {
   /* border: 1px solid; */
@@ -59,10 +60,9 @@
 .navLinks:active {
   color: var(--text-main);
   border-bottom: 2px solid var(--primary);
+ 
 }
-#catItem{
-  position: relative;
-}
+
 .menuIcon {
   display: none;
 }

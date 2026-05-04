@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logoImg from "../assets/logo.png";
 import menuIcon from "../assets/menu.png";
 import cartIcon from "../assets/shopping-cart.png";
@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import CategoryBox from "./CategoryBox";
 
 export default function Header({ query, setQuery, inputValue, setInputValue }) {
+  const [showCategory, setShowCategory] = useState(false);
   return (
     <header>
       <div className="navBar">
@@ -22,10 +23,9 @@ export default function Header({ query, setQuery, inputValue, setInputValue }) {
         />
         <div className="linkContainer">
           <div id="catItem" className="navLinks">
-            <p>Category</p>
-            <CategoryBox/>
+            <p onClick={() => setShowCategory(prev => !prev)}>Category</p>
           </div>
-          
+          { showCategory && <CategoryBox/>}
           <div id="otherLink" className="navLinks">
             <p>Contact Us</p>
           </div>
