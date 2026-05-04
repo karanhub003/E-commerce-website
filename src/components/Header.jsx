@@ -3,6 +3,7 @@ import logoImg from "../assets/logo.png";
 import menuIcon from "../assets/menu.png";
 import cartIcon from "../assets/shopping-cart.png";
 import './Header.css'
+import SearchBar from "./SearchBar";
 
 
 
@@ -14,10 +15,7 @@ export default function Header() {
         <img className="logoImg" src={logoImg} alt="Logo" />
         <p>NEXORA</p>
       </div>
-      <div className="searchContainer">
-          <i className="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search Nexora.in" />
-      </div>
+      <SearchBar/>
       <div className="linkContainer">
         <div id="otherLink"  className="navLinks">
         <p>Category</p>
