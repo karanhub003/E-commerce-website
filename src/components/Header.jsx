@@ -6,7 +6,7 @@ import "./Header.css";
 import SearchBar from "./SearchBar";
 import CategoryBox from "./CategoryBox";
 
-export default function Header({ query, setQuery, inputValue, setInputValue }) {
+export default function Header({ query, setQuery, inputValue, setInputValue,setCategory}) {
   const [showCategory, setShowCategory] = useState(false);
   return (
     <header>
@@ -25,7 +25,7 @@ export default function Header({ query, setQuery, inputValue, setInputValue }) {
           <div id="catItem" className="navLinks">
             <p onClick={() => setShowCategory(prev => !prev)}>Category</p>
           </div>
-          { showCategory && <CategoryBox/>}
+          { showCategory && <CategoryBox setCategory={setCategory} setQuery={setQuery} setInputValue={setInputValue}  setShowCategory={setShowCategory}/>}
           <div id="otherLink" className="navLinks">
             <p>Contact Us</p>
           </div>

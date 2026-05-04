@@ -1,20 +1,32 @@
 import React from 'react'
 import './CategoryBox.css'
 
-export default function CategoryBox() {
+export default function CategoryBox({setCategory,setQuery,setInputValue, setShowCategory}) {
+ 
+
+  const categories = [
+  "All",
+  "Beauty",
+  "Fragrances",
+  "Furniture",
+  "Groceries",
+  "Home-Decoration",
+  "Kitchen-Accessories",
+  "Laptops",
+  "Mens-Shirts",
+  "Mens-Shoes",
+  "Mens-Watches",
+  "Mobile-Accessories"
+];
   return (
     <div className='categoryBox'>
-        <p>Beauty</p>
-        <p>fragrances</p>
-        <p>furniture</p>
-        <p>groceries</p>
-        <p>home-decoration</p>
-        <p>kitchen-accessories</p>
-        <p>laptops</p>
-        <p>mens-shirts</p>
-        <p>mens-shoes</p>
-        <p>mens-watches</p>
-        <p>mobile-accessories</p>
+      {categories.map((cat)=>(
+        <p key={cat} onClick={()=>{setCategory(cat==="All"?'':cat)
+        setQuery("")
+        setInputValue("")
+        setShowCategory(false)}}>{cat}</p>
+      ))}
     </div>
-  )
+ )
 }
+

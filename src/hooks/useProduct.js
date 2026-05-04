@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from 'react'
 
-export default function useProduct() {
+export default function useProduct(query,category) {
     const [products,setProducts]=useState([])
     const[loading,setLoading]=useState(true)
     const[error,setError]=useState(null)
 
     useEffect(()=>{
-        async function fetchProducts(){
-            try{
-                const res=await fetch("https://dummyjson.com/products?limit=100")
+  async function fetchProducts(){
+    setLoading(true)
+
+    let url="";
+       
+    if(query){
+            url=`https://dummyjson.com/products/search?q=${query}`
+        }else if(category){
+            url=`https://dummyjson.com/products/category/${category}`
+        }else{
+            url=`https://dummyjson.com/products?limit=100`
+        }
+
+       try{
+                const res=await fetch(url)
                 const data=await res.json()
                 setProducts(data.products)
                 
@@ -20,7 +32,7 @@ export default function useProduct() {
         }
         fetchProducts()
         
-    },[])
+    },[query,category])
     
   return {products,loading,error}
     

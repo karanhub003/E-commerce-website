@@ -6,7 +6,14 @@ export default function SearchBar({
   inputValue,
   setInputValue,
   setQuery,
+  setCategory
 }) {
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      setQuery(inputValue || "");
+      setCategory(""); // reset category
+    }
+  };
   return (
     <div className="searchContainer">
       <i className="fa-solid fa-magnifying-glass"></i>
@@ -21,11 +28,7 @@ export default function SearchBar({
                 setQuery("")
             }
         }}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") {
-            setQuery(inputValue || "");
-          }
-        }}
+        onKeyDown={handleKeyDown}
       />
     </div>
   );
