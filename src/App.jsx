@@ -3,6 +3,7 @@ import { useState } from "react";
 import Home from "./components/Home";
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [category, setCategory] = useState("");
@@ -20,6 +21,7 @@ function App() {
       <main>
         <Outlet context={{ query,category }} />
       </main>
+      <Footer/>
     </>
   );
 }
