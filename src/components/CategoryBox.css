@@ -20,6 +20,6 @@
 .categoryBox p{
     font-weight: 600;
 }
-p:hover{
+.categoryBox p:hover{
     transform: scale(1.2);
 }

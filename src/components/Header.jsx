@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logoImg from "../assets/logo.png";
 import menuIcon from "../assets/menu.png";
 import cartIcon from "../assets/shopping-cart.png";
@@ -11,10 +12,10 @@ export default function Header({ query, setQuery, inputValue, setInputValue,setC
   return (
     <header>
       <div className="navBar">
-        <div className="logoBox">
+        <Link to="/" className="logoBox">
           <img className="logoImg" src={logoImg} alt="Logo" />
           <p>NEXORA</p>
-        </div>
+        </Link>
         <SearchBar
           query={query}
           setQuery={setQuery}
