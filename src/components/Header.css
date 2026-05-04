@@ -60,6 +60,9 @@
   color: var(--text-main);
   border-bottom: 2px solid var(--primary);
 }
+#catItem{
+  position: relative;
+}
 .menuIcon {
   display: none;
 }

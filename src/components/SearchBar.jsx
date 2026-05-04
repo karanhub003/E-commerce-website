@@ -7,8 +7,6 @@ export default function SearchBar({
   setInputValue,
   setQuery,
 }) {
-  console.log({ inputValue, setInputValue, setQuery });
-  // 🔥 trigger search ONLY on Enter
   return (
     <div className="searchContainer">
       <i className="fa-solid fa-magnifying-glass"></i>

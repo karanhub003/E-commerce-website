@@ -4,6 +4,7 @@ import menuIcon from "../assets/menu.png";
 import cartIcon from "../assets/shopping-cart.png";
 import "./Header.css";
 import SearchBar from "./SearchBar";
+import CategoryBox from "./CategoryBox";
 
 export default function Header({ query, setQuery, inputValue, setInputValue }) {
   return (
@@ -20,9 +21,11 @@ export default function Header({ query, setQuery, inputValue, setInputValue }) {
           setInputValue={setInputValue}
         />
         <div className="linkContainer">
-          <div id="otherLink" className="navLinks">
+          <div id="catItem" className="navLinks">
             <p>Category</p>
+            <CategoryBox/>
           </div>
+          
           <div id="otherLink" className="navLinks">
             <p>Contact Us</p>
           </div>
