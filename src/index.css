@@ -22,7 +22,9 @@ main{
     padding: 20px;
     margin-top: 20px;
 }
-
+footer{
+    position: sticky;
+}
 .ProductsContainer{
     display: flex;
     gap: 20px;
