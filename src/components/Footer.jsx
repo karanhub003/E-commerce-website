@@ -6,19 +6,19 @@ export default function Footer() {
     <footer>
         <div className='footerContainer'>
             <div className="leftSide">
-                <div className="links">
+                <div className="leftVal">
                     <h2>Useful Links</h2>
                     <p>Contact-Us</p>
                     <p>Terms & Conditions</p>
                 </div>
-                <div className="socialMedia">
+                <div className="leftVal">
                     <h2>Social Media</h2>
                     <div className="socialIcon">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-facebook"></i>
                     </div>
                 </div>
-                <div className="copyRight">
+                <div className="leftVal">
                     <h2>Copyright</h2>
                     <p>Nexora<i class="fa-solid fa-copyright"></i>2026</p>
                 </div>

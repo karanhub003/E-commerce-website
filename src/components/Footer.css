@@ -1,3 +1,68 @@
 .footerContainer{
-    border: 2px solid white;
+    margin-top: 54px;
+   background-color: var(--bg-card);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:15px
 }
+.leftSide{
+   
+    min-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 40px;
+   
+}
+ h2{
+     color: var(--text-main);
+}
+ p{
+    color: var(--text-secondary);
+}
+.leftVal{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.socialIcon{
+    display: flex;
+    gap: 4px;
+    color: var(--text-secondary);
+}
+
+
+.rightSide{
+   
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px 40px;
+}
+.emailInputBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    
+}
+
+.emailInputBox input,.emailInputBox button{
+  width: 100%;
+  padding:15px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color:var(--bg-main);
+  color: var(--text-main);
+}
+.emailInputBox input::placeholder{
+    color: var(--text-main);
+}
+
