@@ -1,9 +1,12 @@
 import React from 'react'
 import './AddToCartBtn.css'
-export default function AddToCartBtn() {
+
+export default function AddToCartBtn({handleAddToCart}) {
+
+   
   return (
     <div className='addToCartBtn'>
-            <button className='ToCartBtn'>Add To Cart</button>
+            <button className='ToCartBtn' onClick={handleAddToCart}>Add To Cart</button>
         </div>
   )
 }

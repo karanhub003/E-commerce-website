@@ -6,9 +6,11 @@ import cartIcon from "../assets/shopping-cart.png";
 import "./Header.css";
 import SearchBar from "./SearchBar";
 import CategoryBox from "./CategoryBox";
+import { useCart } from "../context/CartContext";
 
 export default function Header({ query, setQuery, inputValue, setInputValue,setCategory}) {
   const [showCategory, setShowCategory] = useState(false);
+  const {cart}=useCart()
   return (
     <header>
       <div className="navBar">
@@ -30,12 +32,13 @@ export default function Header({ query, setQuery, inputValue, setInputValue,setC
           <Link to="/Contact-us" id="otherLink" className="navLinks">
             <p>Contact Us</p>
           </Link>
-          <div id="cartBtn" className="navLinks">
+          <Link to="/cart" id="cartBtn" className="navLinks">
             <img src={cartIcon} alt="cart" />
-            <p>Cart</p>
-          </div>
+             <p>cart:({cart.length})</p>
+          </Link>
           <div className="menuIcon">
             <img src={menuIcon} alt="menuIcon" />
+           
           </div>
         </div>
       </div>
