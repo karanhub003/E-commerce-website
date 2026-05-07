@@ -6,12 +6,10 @@ export default function SearchBar({
   inputValue,
   setInputValue,
   setQuery,
-  setCategory
 }) {
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       setQuery(inputValue || "");
-      setCategory(""); // reset category
     }
   };
   return (

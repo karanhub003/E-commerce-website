@@ -1,0 +1,63 @@
+.slideBarContainer{ 
+  
+    background-color: var(--bg-card);
+    width: 250px; 
+    flex: 0 0 250px;
+   height: fit-content;
+    padding: 15px 10px;
+    border-radius: 12px;
+}
+.categoriesBox{
+   
+    padding: 10px;
+}
+.categoriesValue{
+    margin-block: 14px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+    text-decoration: underline;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+   
+}
+.categoriesValue p:hover{
+    transform: scale(1.2);
+    color: var(--text-main);
+}
+.categoriesValue p:active{
+    color: var(--text-main);
+}
+
+hr{
+    border: 1px solid var(--bg-main);
+    margin-block: 8px;
+}
+.sortingBox{
+    padding: 10px;
+}
+.sortingValue{
+    margin-block: 10px;
+    display: flex;
+    gap: 8px;
+}
+.sortingValue span{
+    color: var(--text-main);
+}
+.priceVAl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width:700px) {
+    .slideBarContainer{
+        display: none;
+    }
+}

@@ -5,7 +5,6 @@ import menuIcon from "../assets/menu.png";
 import cartIcon from "../assets/shopping-cart.png";
 import "./Header.css";
 import SearchBar from "./SearchBar";
-import CategoryBox from "./CategoryBox";
 import { useCart } from "../context/CartContext";
 
 export default function Header({ query, setQuery, inputValue, setInputValue,setCategory}) {
@@ -25,10 +24,6 @@ export default function Header({ query, setQuery, inputValue, setInputValue,setC
           setInputValue={setInputValue}
         />
         <div className="linkContainer">
-          <div id="catItem" className="navLinks">
-            <p onClick={() => setShowCategory(prev => !prev)}>Category</p>
-          </div>
-          { showCategory && <CategoryBox setCategory={setCategory} setQuery={setQuery} setInputValue={setInputValue}  setShowCategory={setShowCategory}/>}
           <Link to="/Contact-us" id="otherLink" className="navLinks">
             <p>Contact Us</p>
           </Link>
