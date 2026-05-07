@@ -32,5 +32,3 @@ export default function ProductList() {
   );
 }
 
-{/* <Sorting setCategory={setCategory} query={query}
-        setQuery={setQuery} setInputValue={setInputValue}/> */}
